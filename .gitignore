@@ -1,0 +1,15 @@
+.env
+.env.*
+!.env.example
+.venv/
+__pycache__/
+.pytest_cache/
+data/
+artifacts/
+indexes/
+checkpoints/
+*.parquet
+*.npy
+*.npz
+*.index
+.DS_Store
