@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "source": "measured",
+  "corpus_source": "synthetic clustered normalized vectors",
+  "hardware": {
+    "platform": "macOS-14.0-arm64-arm-64bit",
+    "cpu_count": 8,
+    "ram_bytes": 8589934592,
+    "faiss": "1.13.0"
+  },
+  "config": {
+    "schema_version": 1,
+    "seed": 42,
+    "corpus_count": 10000,
+    "query_count": 200,
+    "dimension": 64,
+    "k": 10,
+    "repeats": 3,
+    "threads": 1,
+    "configs": [
+      {
+        "name": "Exact",
+        "type": "flat"
+      },
+      {
+        "name": "HNSW ef16",
+        "type": "hnsw",
+        "ef": 16
+      },
+      {
+        "name": "HNSW ef64",
+        "type": "hnsw",
+        "ef": 64
+      },
+      {
+        "name": "HNSW ef128",
+        "type": "hnsw",
+        "ef": 128
+      },
+      {
+        "name": "IVF-PQ probe4",
+        "type": "ivfpq",
+        "nprobe": 4
+      },
+      {
+        "name": "IVF-PQ probe16",
+        "type": "ivfpq",
+        "nprobe": 16
+      }
+    ],
+    "decision_budgets": {
+      "recall_min": 0.9,
+      "p95_ms_max": 10,
+      "index_mib_max": 10
+    }
+  },
+  "corpus_sha256": "5c8a8cabf49306995da89ae272aa1d505fc937086b64268fd28a2c1cf3042f20",
+  "queries_sha256": "73833bec5af31003a435f7bc5c47674e029c02e7212287bb1306a0f8c1a0254a",
+  "summaries": [
+    {
+      "name": "Exact",
+      "algorithm": "flat",
+      "recall": 1.0,
+      "p50_ms": 0.054917,
+      "p95_ms": 0.059294049999999994,
+      "p99_ms": 0.06104283,
+      "index_bytes": 2560045,
+      "process_rss_bytes": 83394560,
+      "build_ms": 0.3590830019675195,
+      "queries": 600
+    },
+    {
+      "name": "HNSW ef16",
+      "algorithm": "hnsw",
+      "recall": 0.9134999999999999,
+      "p50_ms": 0.011042,
+      "p95_ms": 0.013963099999999996,
+      "p99_ms": 0.016167420000000002,
+      "index_bytes": 4000442,
+      "process_rss_bytes": 94633984,
+      "build_ms": 511.4437500014901,
+      "queries": 600
+    },
+    {
+      "name": "HNSW ef64",
+      "algorithm": "hnsw",
+      "recall": 0.989,
+      "p50_ms": 0.03025,
+      "p95_ms": 0.036419099999999996,
+      "p99_ms": 0.042631249999999996,
+      "index_bytes": 4000442,
+      "process_rss_bytes": 107888640,
+      "build_ms": 513.9614170184359,
+      "queries": 600
+    },
+    {
+      "name": "HNSW ef128",
+      "algorithm": "hnsw",
+      "recall": 0.9979999999999999,
+      "p50_ms": 0.061479,
+      "p95_ms": 0.0726271,
+      "p99_ms": 0.09643141999999999,
+      "index_bytes": 4000442,
+      "process_rss_bytes": 110198784,
+      "build_ms": 516.3643330160994,
+      "queries": 600
+    },
+    {
+      "name": "IVF-PQ probe4",
+      "algorithm": "ivfpq",
+      "recall": 0.4579999999999999,
+      "p50_ms": 0.014042,
+      "p95_ms": 0.015084,
+      "p99_ms": 0.01703607999999993,
+      "index_bytes": 242612,
+      "process_rss_bytes": 112934912,
+      "build_ms": 355.63016700325534,
+      "queries": 600
+    },
+    {
+      "name": "IVF-PQ probe16",
+      "algorithm": "ivfpq",
+      "recall": 0.4579999999999999,
+      "p50_ms": 0.022625,
+      "p95_ms": 0.02671844999999999,
+      "p99_ms": 0.08776065999999984,
+      "index_bytes": 242612,
+      "process_rss_bytes": 113917952,
+      "build_ms": 356.91995901288465,
+      "queries": 600
+    }
+  ],
+  "limitations": [
+    "CPU single-process warm sequential search; no network or embedding latency.",
+    "Synthetic vectors, not a real text corpus or semantic relevance evaluation.",
+    "Serialized index bytes are not total serving RAM. RSS includes shared corpus and ground truth; not isolated per-engine peak memory.",
+    "Fixed preregistered configurations; no tuning on test queries.",
+    "Three timing repeats reuse the same index and queries; not independent build seeds."
+  ],
+  "raw_measurements": "cpu-queries.csv",
+  "raw_sha256": "8dc64b112cf5559a35e44d6d21c7466975123ce580530314fd951377a9cc834a"
+}
