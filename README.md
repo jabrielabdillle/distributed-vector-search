@@ -1,6 +1,8 @@
-# Distributed Vector Search Lab
+# ML Systems Trade-off Lab
 
-An agent-ready blueprint for batch embedding generation with Spark and GPU workers, sharded approximate nearest-neighbor search, and reproducible comparisons against pgvector and OpenSearch.
+An experimental study of vector retrieval: which configuration gives the best retrieval quality within a latency and memory budget? Compare exact search, HNSW and IVF-PQ, then compare Faiss with pgvector and OpenSearch. Spark and GPU embedding are later scale experiments.
+
+The user selected this analytical framing on 2026-11-16. See [study design](docs/STUDY.md) and [interview guide](docs/INTERVIEW_GUIDE.md).
 
 Status: design only. No pipeline, GPU run, benchmark result or deployed service is claimed.
 

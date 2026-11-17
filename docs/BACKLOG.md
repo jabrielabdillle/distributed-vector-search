@@ -15,3 +15,6 @@ All implementation milestones pending.
 | M8 | Reproducible report and optional static explorer; every chart traces to evidence; clean-room reproduction and operations handoff | M7 |
 
 If GPU unavailable, complete CPU-ready tasks while recording M2/M7 GPU acceptance as blocked. A CPU-only report is explicitly partial completion.
+
+## Analytical execution order
+Follow docs/STUDY.md: M0 → M1 → M3 → a single-node slice of M6 → M5 → M4 → remaining M6 → M2/M7 → M8. The early M6 slice only measures exact versus HNSW/IVF-PQ and does not mark the full comparative harness complete. Record the research question and interview takeaway at each milestone.
