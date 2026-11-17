@@ -1,6 +1,6 @@
 # Dependency-ordered milestones
 
-All implementation milestones pending.
+M0a CPU synthetic feasibility slice completed; original full M0 and downstream scientific milestones remain pending. W1 free hosted dashboard is an independent usability milestone.
 
 | Milestone | Deliverable and acceptance | Depends on |
 |---|---|---|
