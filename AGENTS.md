@@ -9,3 +9,6 @@ Use immutable corpus, embedding and index generations. Reject mixed models, dime
 Keep credentials, corpora, vectors, checkpoints and indexes out of Git. No paid resources, billing enrollment or sensitive data uploads. GPU absence is a documented blocker for GPU evidence, not permission to invent speedups. Bound memory, batches, queues, retries and request deadlines.
 
 When coordinating multiple agents, assign disjoint ownership; coordinator owns schemas and integration. Before interruption save completed work, exact failures and next executable step. Markdown cannot automatically restart an agent after account usage limits reset.
+
+## Selected analytical framing
+Read docs/STUDY.md and docs/INTERVIEW_GUIDE.md. Every experiment must state a question, baseline, controlled variables, changed parameter, evidence and decision. Explain new concepts plainly. Prioritize measured retrieval trade-offs before distributed scale. Keep ANN neighbor recall distinct from semantic relevance and business impact.

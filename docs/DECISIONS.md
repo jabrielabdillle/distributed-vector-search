@@ -9,3 +9,5 @@
 - Private bootstrap repository: publication audience can be changed by explicit user direction.
 
 Record future decisions with context, alternatives, consequences and evidence; do not silently rewrite historical benchmark conditions.
+
+2026-11-16 — User selected ML systems trade-off analysis. Start with a comprehensible single-machine benchmark, then scale. Preserve Spark/GPU and sharding as later milestones. Optimize the explanation and evidence quality, not the number of technologies.

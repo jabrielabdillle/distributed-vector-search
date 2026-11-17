@@ -2,12 +2,12 @@
 
 Updated: 2026-11-16
 
-User requested a separate distributed vector search project, autonomous-agent context and a GitHub repository containing the context. Follow the prior project's milestone workflow. Current scope is blueprint publication; implementation has not started.
+User requested a separate distributed vector search project, autonomous-agent context and a GitHub repository containing the context. Follow the prior project's milestone workflow. User selected ML systems trade-off analysis on 2026-11-16. Current scope is the analytical project blueprint; implementation has not started. Prioritize understandable controlled experiments and defensible conclusions.
 
 Repository: https://github.com/jabrielabdillle/distributed-vector-search
 Visibility: private initial repository.
 Cost boundary: local/open-source defaults; no paid infrastructure authorized.
-Active task: bootstrap context, coordinator.
+Active task: none; selected framing documented.
 Evidence: markdown context only; no runtime measurements.
 Next action: M0 runtime inventory and compatibility proof in docs/BACKLOG.md.
 
