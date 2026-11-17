@@ -7,8 +7,8 @@ User requested a separate distributed vector search project, autonomous-agent co
 Repository: https://github.com/jabrielabdillle/distributed-vector-search
 Visibility: private initial repository.
 Cost boundary: local/open-source defaults; no paid infrastructure authorized.
-Active task: none; selected framing documented.
-Evidence: markdown context only; no runtime measurements.
+Active task: W1 dashboard next; M0a ready for merge. User authorized implementation, free GitHub Pages, public visibility, milestone PRs and merges.
+Evidence: M0a CPU smoke completed; seven tests, six configurations and 3,600 timed queries. See reports/M0a.md.
 Next action: M0 runtime inventory and compatibility proof in docs/BACKLOG.md.
 
 ## Resume checklist

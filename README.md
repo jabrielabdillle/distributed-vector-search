@@ -4,7 +4,7 @@ An experimental study of vector retrieval: which configuration gives the best re
 
 The user selected this analytical framing on 2026-11-16. See [study design](docs/STUDY.md) and [interview guide](docs/INTERVIEW_GUIDE.md).
 
-Status: design only. No pipeline, GPU run, benchmark result or deployed service is claimed.
+Status: CPU feasibility benchmark implemented. See [measured evidence](reports/M0a.md). Full real-data, distributed and GPU benchmarks remain pending.
 
 ## Work backwards from the deliverable
 The final artifact is a reproducible report showing recall–latency–memory Pareto frontiers for identical vectors, queries, hardware budgets and retrieval semantics. Every plotted point links to raw measurements, configuration, code revision and dataset checksums. An operator can rebuild a generation, query it across shards, reproduce a benchmark and roll back safely.
